@@ -18,3 +18,6 @@ Time: 20190528-073202, Setting: mouimoto-novel-Conv4-maml-aug 1shot 5way_train 5
 Time: 20190528-073408, Setting: mouimoto-novel-ResNet10-maml-aug 1shot 5way_train 5way_test, Acc: 600 Test Acc = 38.68% +- 0.74% 
 Time: 20190528-090445, Setting: mouimoto-novel-Conv6-maml-aug 1shot 5way_train 5way_test, Acc: 600 Test Acc = 41.46% +- 0.71% 
 Time: 20190528-090536, Setting: mouimoto-novel-Conv6-maml_approx-aug 1shot 5way_train 5way_test, Acc: 600 Test Acc = 79.13% +- 0.91% 409 
+Time: 20190528-152432, Setting: mouimoto-novel-ResNet10-maml_approx-aug 1shot 5way_train 5way_test, Acc: 600 Test Acc = 84.22% +- 0.76% 701
+Time: 20190528-155508, Setting: mouimoto-novel-ResNet10-maml_approx-aug 5shot 5way_train 5way_test, Acc: 600 Test Acc = 43.12% +- 0.74% 
+Time: 20190530-140024, Setting: mouimoto-novel-ResNet10-maml_approx-aug 5shot 5way_train 5way_test, Acc: 600 Test Acc = 92.00% +- 0.55% 1600
