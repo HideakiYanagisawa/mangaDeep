@@ -1,11 +1,3 @@
-# Copyright (c) 2017-present, Facebook, Inc.
-# All rights reserved.
-#
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-#
-
-import argparse
 import os
 import argparse
 import logging
@@ -165,15 +157,6 @@ def EpsDBSCAN(D, k):
     for i in range(N-1):
         slope = (Eps[i+1] - Eps[i]) / (Eps_index[i+1] - Eps_index[i])
         Slopes.append(slope)
-        ##if slope > old_slope and slope < old_slope * 1.1:
-        ##    out = Eps[i]
-        ##    break
-        #if i > 0 and slope > ave_slope:
-        #    out = Eps[i]
-        #    break
-        #else:
-        #    out = Eps[i+1]
-        #    old_slope = slope
 
     ave_slope = sum(Slopes)/len(Slopes)
 
@@ -183,25 +166,8 @@ def EpsDBSCAN(D, k):
             break
         else:
             out = Eps[i+1]
-
-    #if N % 2 == 0:
-    #    median1 = N/2
-    #    median2 = N/2 + 1
-    #    median1 = int(median1) - 1
-    #    median2 = int(median2) - 1
-    #    median = (Eps[median1] + Eps[median2]) / 2
-    #else:
-    #    median = (N + 1) / 2
-    #    median = int(median) - 1
-    #    median = Eps[median]
-
-    #out = median
-
-    #out = Avg_Array[int(num*0.9)]
-    #out = Array[int(num*0.8)]
-    #out = float(sum(Eps)/len(Eps))
+            
     out = Eps[1]
-    ##plt.show()
 
     return out
 
